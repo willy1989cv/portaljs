@@ -26,7 +26,7 @@ function useTableOfContents(tableOfContents) {
       })
       .filter((el) => !!el);
   }, []);
-console.log(getHeadings,"getheadings");
+
   useEffect(() => {
     if (tableOfContents.length === 0) return;
     const headings = getHeadings(tableOfContents);
@@ -67,7 +67,6 @@ export default function Layout({
   sidebarTree?: [];
   isHomePage?: boolean;
 }) {
-  console.log(children)
   // const { toc } = children.props;
   const { theme, setTheme } = useTheme();
 
