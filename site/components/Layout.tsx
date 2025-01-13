@@ -81,7 +81,6 @@ export default function Layout({
     }
     return section.children.findIndex(isActive) > -1;
   }
-
   return (
     <>
       {title && <NextSeo title={title} description={description} />}
