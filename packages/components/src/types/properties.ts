@@ -8,7 +8,7 @@
 type URL = string; // Just in case we want to transform it into an object with configurations
 export interface Data {
   url?: URL;
-  values?: { [key: string]: number | string }[];
+  values?: { [key: string]: number | string | null | undefined }[];
   csv?: string;
 }
 

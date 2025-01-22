@@ -120,3 +120,42 @@ export const FromURL: Story = {
     yAxis: 'Price',
   },
 };
+
+
+// export const FromURLMulti: Story = {
+//   name: 'Line chart from URL Multi Column',
+//   args: {
+//     data: {
+//       url: 'https://raw.githubusercontent.com/datasets/sea-level-rise/refs/heads/main/data/epa-sea-level.csv',
+//     },
+//     title: 'Sea Level Rise (1880-2023)',
+//     xAxis: 'Year',
+//     yAxis: ["CSIRO Adjusted Sea Level", "NOAA Adjusted Sea Level"],
+//     xAxisType: 'temporal',
+//     xAxisTimeUnit: 'year',
+//     yAxisType: 'quantitative'
+//   },
+// };
+
+// export const MultipleSeriesMissingValues: Story = {
+//   name: 'Line chart with missing values',
+//   args: {
+//     data: {
+//       values: [
+//         { year: '2020', seriesA: 10, seriesB: 15 },
+//         { year: '2021', seriesA: 20 },  // seriesB missing
+//         { year: '2022', seriesA: 15 },  // seriesB missing
+//         { year: '2023', seriesB: 30 },  // seriesA missing
+//         { year: '2024', seriesA: 25, seriesB: 35 },
+//         { year: '2024', seriesA: 20, seriesB: 40 },
+//         { year: '2024', seriesB: 45 },
+//       ],
+//     },
+//     title: 'Handling Missing Data Points',
+//     xAxis: 'year',
+//     yAxis: ['seriesA', 'seriesB'],
+//     xAxisType: 'temporal',
+//     xAxisTimeUnit: 'year',
+//     yAxisType: 'quantitative'
+//   },
+// };

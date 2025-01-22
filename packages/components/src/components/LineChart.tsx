@@ -47,11 +47,15 @@ export function LineChart({
       color: 'black',
       strokeWidth: 1,
       tooltip: true,
+      invalid: "break-paths"
     },
     data: specData,
     ...(isMultiYAxis
       ? {
-          transform: [{ fold: yAxis, as: ['key', 'value'] }],
+          transform: [
+            { fold: yAxis, as: ['key', 'value'] },
+            { filter: 'datum.value != null && datum.value != ""' }
+          ],
         }
       : {}),
     selection: {
